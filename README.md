@@ -4,6 +4,8 @@
 
 The library simplifies communication with Spotify Web Api. Written in Net 8.
 
+Not all endpoints have been covered yet. Feel free to add more.
+
 ## Usage
 
 * Get access token (e.g. via SpotifyAuthorize library)
