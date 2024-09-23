@@ -1,9 +1,12 @@
+using SpotifyWebApi.ApiParts.Common.Actions;
+using SpotifyWebApi.Setup;
+
 namespace SpotifyWebApi.ApiParts.Player.Actions;
 
-public class Pause
+public class Pause(HttpClientContainer clientContainer) : ActionBase(clientContainer)
 {
-    public async void Perform(HttpClient client)
+    public async Task Perform()
     {
-        await client.PutAsync("me/player/pause", null);
+        await _client.PutAsync("me/player/pause", null);
     }
 }

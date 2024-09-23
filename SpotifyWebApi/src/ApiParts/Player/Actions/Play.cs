@@ -7,7 +7,7 @@ namespace SpotifyWebApi.ApiParts.Player.Actions;
 
 public class Play(HttpClientContainer clientContainer) : ActionBase(clientContainer)
 {
-    public async void Perform(string spotifyUriToPlay)
+    public async Task Perform(string spotifyUriToPlay)
     {
         StringContent content = new(
             JsonSerializer.Serialize(new { context_uri = spotifyUriToPlay }),
