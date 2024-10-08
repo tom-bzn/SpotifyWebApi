@@ -7,7 +7,8 @@ public record SimplifiedPlaylist
     string Name,
     string Description,
     string Uri,
-    IEnumerable<Image> Images
+    IEnumerable<Image> Images,
+    Tracks? Tracks
 );
 
 /*
