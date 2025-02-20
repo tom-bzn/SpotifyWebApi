@@ -4,7 +4,7 @@ public interface ISearchableItem
 {
     string Name { get; }
     
-    IEnumerable<Image> Images { get; }
+    IEnumerable<Image>? Images { get; }
     
     string Uri { get; }
 }
