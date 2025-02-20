@@ -12,13 +12,11 @@ public class PaginatedItemsGetter<ItemType>(HttpClientContainer clientContainer)
     {
         List<ItemType> items = [];
 
-        bool shouldProceed = true;
-
-        while (shouldProceed)
+        while (true)
         {
             var results = await _client.GetFromJsonAsync<PaginatedItems<ItemType>>(endpointUri);
 
-            if (null == results)
+            if (results == null)
             {
                 break;
             }
