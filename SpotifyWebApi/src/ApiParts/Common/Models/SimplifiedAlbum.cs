@@ -10,5 +10,6 @@ public record SimplifiedAlbum
     string ReleaseDate,
     IEnumerable<Image> Images,
     string Uri,
+    string Id,
     IEnumerable<SimplifiedArtist> Artists
 ) : ISearchableItem;

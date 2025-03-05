@@ -7,6 +7,7 @@ public record SimplifiedPlaylist
     string Name,
     string Description,
     string Uri,
+    string Id,
     IEnumerable<Image> Images,
     Tracks? Tracks
 ) : ISearchableItem;

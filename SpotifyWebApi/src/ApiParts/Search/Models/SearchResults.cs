@@ -9,3 +9,5 @@ public record SearchResults
     PaginatedItems<SimplifiedPlaylist>? Playlists,
     PaginatedItems<Track>? Tracks
 );
+
+// each category will have its own next and prev links (checked on 2025-02-20)

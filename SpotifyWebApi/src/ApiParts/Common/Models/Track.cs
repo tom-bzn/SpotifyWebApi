@@ -6,5 +6,6 @@ public record Track
     int DurationMs,
     string Href,
     string Name,
-    string Id
+    string Id,
+    string Uri
 );
